@@ -580,7 +580,7 @@ def fir_username():
             pygame.draw.rect(window, 'white', cursor)
         버튼(window, next_btn_img, (570, 330), next, 효과음=(sounds[0], 0))  # 다음 버튼
         버튼(window, back_btn_img, (700, 30), main_menu, 효과음=(sounds[0], 0))
-        username1 = fir_username[10:]
+        username1 = fir_username[10:].strip()
         pygame.display.update()
 
 
@@ -625,7 +625,7 @@ def sec_username():
             pygame.draw.rect(window, 'white', cursor)
         버튼(window, next_btn_img, (570, 330), next, 효과음=(sounds[0], 0))  # 다음 버튼
         버튼(window, back_btn_img, (700, 30), fir_username, 효과음=(sounds[0], 0))
-        username2 = sec_username[10:]
+        username2 = sec_username[10:].strip()
         pygame.display.update()
 
 
