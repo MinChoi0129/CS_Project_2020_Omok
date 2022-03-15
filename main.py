@@ -67,7 +67,6 @@ turn = "BLACK"  # 차례(시작 : 흑)
 board = [['·' for i in range(19)] for j in range(19)]
 evaluationResult = 0  # 0 : 게임진행, 1 : 흑 승리, 2 : 백 승리
 
-
 class 버튼:  # 완성
     def __init__(self, 윈도우, 버튼이미지, pygame좌표=(0, 0), 실행할함수=None, 매개변수=None, 효과음=(None, 0)):
         mouse = pygame.mouse.get_pos()
