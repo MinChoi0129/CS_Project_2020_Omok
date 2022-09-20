@@ -366,7 +366,7 @@ def all_daeguks():  # 완성
     pygame.mixer.music.play(0)
     file_len = 0
     font = pygame.font.Font(resource_path('paybooc Bold.ttf'), 20)
-
+    
     with open(resource_path("game_records.txt"), 'r', encoding='utf-8') as f:
         num_of_daeguks = 0
         for i in f:
