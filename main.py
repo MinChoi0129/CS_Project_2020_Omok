@@ -367,12 +367,12 @@ def all_daeguks():  # 완성
     file_len = 0
     font = pygame.font.Font(resource_path('paybooc Bold.ttf'), 20)
     
-    with open(resource_path("game_records.txt"), 'r', encoding='utf-8') as f:
+    with open(resource_path("./game_records.txt"), 'r', encoding='utf-8') as f:
         num_of_daeguks = 0
         for i in f:
             num_of_daeguks += 1
 
-    with open(resource_path("game_records.txt"), 'r', encoding='utf-8') as f:
+    with open(resource_path("./game_records.txt"), 'r', encoding='utf-8') as f:
         contents = list()
         new_contents = list()
 
